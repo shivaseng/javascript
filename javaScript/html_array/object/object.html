@@ -1,0 +1,37 @@
+<!DOCTYPE html><head><title> javascript object</title></head>
+<body>
+    <h1>
+        JavaScript Objects
+    </h1><p id="demo"></p>
+   <script>
+    var student = {
+        name: "lokesh",
+        age: 21,
+        branch: " cse",
+    };
+   x="age";
+    
+    document.getElementById("demo").innerHTML =student.name +" of age " +student[x] + " and his branch " + student.branch;
+   </script>
+   <!-- <script>
+    var student =new Object();
+    student.name="lokesh",
+    student.age=21,
+    student.branch="ECE";
+    document.getElementById("demo").innerHTML =student.name+"  of the age " + student.age + " branch "+ student.branch;
+   </script> -->
+
+   <script>
+    function stud(name,age,branch){
+        this.name=name;
+        this.age=age;
+        this.branch=branch;
+
+    }
+    x="age"
+    var stu = stud("Ragini", 23 ,"MBA")
+    document.getElementById("demo").innerHTML = stu.name+"  of the age " + stu[x] + " branch "+ stu.branch;
+   </script>
+</body>
+
+</html>

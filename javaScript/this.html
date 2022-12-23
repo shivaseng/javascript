@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <h1> javascript this keyword</h1>
+</head>
+<body>
+    <!-- <script>
+        var value=50
+        function My_Function(){
+           var value= 100
+           alert("value: "+value)// value take the function variable(100)
+           alert("this value: " + this.value)//but this.value takes the global variable(50)
+        }
+        My_Function()
+    </script> -->
+    <script>
+        const random ={
+            name :"lokesh",
+            vid:["har har mahadev","jai mata di "],
+            info(){
+                this.vid.forEach(function(tag){
+                    console.log(this.name ,tag)
+                },this)         
+            }
+        }
+        random.info()
+    </script>
+</body>
+</html>

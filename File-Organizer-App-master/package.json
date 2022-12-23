@@ -1,0 +1,14 @@
+{
+  "name": "node-organizer-app",
+  "version": "1.0.0",
+  "description": "\"This is a file organizer app with command line interface\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@raveet_kumar",
+  "license": "ISC",
+  "bin": {
+    "fillo": "index.js"
+  }
+}

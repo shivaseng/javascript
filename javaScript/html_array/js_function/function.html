@@ -1,0 +1,60 @@
+<!DOCTYPE html><head><title> javascript function </title>
+<p id="demo"></p></head>
+<body>
+    <script>
+        function my_function(val){
+            document.getElementById("demo").innerHTML=val*val
+            my_function(5)
+        }
+    </script>
+
+    <!-- <script>
+        let x= function(){
+            alert("hello")
+        }
+        let y= x;
+        document.getElementById("demo").innerHTML=y();
+    </script> -->
+    <script>
+        var Myfunction= new Function("a","b","return a+b")
+        var x= Myfunction(2,3)
+        document.getElementById("demo").innerHTML="the sum is "+x
+    </script>
+    <script>
+        function product(a,b){
+            return a*b
+        }
+        let y= product(2,5)*5
+        document.getElementById("demo").innerHTML="the product is"+ y
+    </script>
+    <script>
+        var body = "return Math.pi *rad*rad"
+        var circle= new Function ("rad",body);
+        alert(circle(5)) 
+    </script>
+    <script>
+        const myfunc=(a,b,c) => {return a*b*c}
+        let produ =myfunc(2,3,4)
+        document.getElementById("demo").innerHTML="product of three no. "+ produ
+
+        
+
+    </script>
+    <script>
+        function* generatefunc(){
+            yield 1;
+            yield 2;
+            yield 3;
+        }
+        let generator = generatefunc();
+        let one= generator.next();
+        let two= generator.next();
+        let three= generator.next();
+        alert(JSON.stringify(one));
+        alert(JSON.stringify(two));
+        alert(JSON.stringify(three));
+    </script>
+</body>
+
+
+</html>
